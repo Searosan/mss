@@ -190,12 +190,12 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "WOW Selamat datang 𝙇𝙊𝙍𝘿 𝙁𝙄𝙕𝙄.\n\n• @BAZIGAR_XD", reply_to_message_id=reply
+                    "WOW Selamat 𝕆𝕨𝕟𝕖𝕣 𝕆𝕤𝕞𝕒𝕟𝕚🤍.\n\n• @ribajosmani", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"Bot Owner just joined the group"
+                    f"Mulkiilaha Botka ayaa hadda ku biiray Group kaan"
                 )
                 continue
 
@@ -265,16 +265,16 @@ def new_member(update: Update, context: CallbackContext):
            # make kontol asu
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                        "❤️ <b>Thanks for adding me to the group!</b>\n\n<b>Promote me as administrator of the group, otherwise I will not be able to work properly.</b>",
+                        "❤️ <b>Waad ku mahadsantahay inaad igu dartay Group Kaan!</b>\n\n<b>Ii Dhiib Admin ka group ka si aan u shaqeeyo, haddii kale ma awoodi doono inaan si sax ah u shaqeeyo.</b>",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 {
                                     InlineKeyboardButton(
-                                        text="ɢᴏ ɪɴʟɪɴᴇ​!",
-                                        switch_inline_query_current_chat=""),
+                                        text=" ᴏᴡɴᴇʀ ​!",
+                                       url="https://t.me/teamosmani"),
                                     InlineKeyboardButton(
                                         text="sᴜᴘᴘᴏʀᴛ​",
-                                        url="https://t.me/BAZIGAR_XD",
+                                        url="https://t.me/osmanigroupbot",
                                     )
                                 }
                             ]
